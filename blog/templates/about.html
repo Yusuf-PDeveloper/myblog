@@ -1,0 +1,39 @@
+{% extends 'parts/base.html' %}
+{% load static %}
+{% block title %}About me{% endblock %}
+{% block header %}
+    <div class="container" style="background-color: lightgreen; padding: 1rem; margin-top: 2em">
+        <div class="flex-md-row">
+            <div class="col-lg-12 col-12">
+                <h3 class="text-center">About Me</h3>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block content %}
+    <div class="container" style="padding: 1em">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <p class="about-text">I'm To'rayev Yusuf Jumma o'g'li, a 21-year-old Software Engineer from Tashkent,
+                    Uzbekistan, currently living in Qora-qamish 2/4, Tashkent.</p>
+                <p>I stadied in the National University of Uzbekistan.I entered in the university in 2015 and I finished
+                    in 2019.</p>
+                <div class="img-fluid" style="padding: 1%">
+                    <img src="{% static '/images/img5.jpeg' %}" class="img-fluid" alt="Livers">
+                    <i class="text-black-50">UzMU,Tashkent.</i>
+                </div>
+                <br>
+                <p>I went to the Humo Arena with my friends in 2019.I went to the Humo Arena with my friends in 2019.</p>
+                <p>I went to the Humo Arena with my friends in 2019.I went to the Humo Arena with my friends in 2019.</p>
+                 <div class="img-fluid" style="padding: 1%">
+                    <img src="{% static '/images/img3.jpeg' %}" class="img-fluid" alt="Humo">
+                     <i class="text-black-50">Humo Arena,Tashkent.</i>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <br>
+<br>
+{% endblock %}

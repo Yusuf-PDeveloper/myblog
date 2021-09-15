@@ -1,0 +1,28 @@
+{% extends 'parts/base.html' %}
+{% block header %}
+<header class="masthead">
+<div class="card-img-overlay"></div>
+<div class="container">
+    <div  class="row">
+        <div class="col-md-8 col-md-10 mx-auto">
+            <div class="site-heading">
+                <h3 class="site-heading my-4 text-black">Welcome to my blog</h3>
+                <p class="text-dark">Django is Awesome</p>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+{% endblock %}
+{% block content %}
+<div class="container">
+<div class="row">
+    <div class="col-md-8 mt-3 left">
+        {% for post in post_list %}
+
+        {% endfor %}
+
+    </div>
+</div>
+</div>
+{% endblock %}

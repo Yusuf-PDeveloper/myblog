@@ -1,0 +1,32 @@
+{% extends 'parts/base.html' %}
+{% load static %}
+{% block title %}Yusuf's Blog{% endblock %}
+{% block content %}
+<section class="about full-screen d-md-flex justify-content-center align-items-center" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                    <div class="about-text">
+                        <h1 class="animated animated-text">
+                            <span class="mr-2">Yusuf To'rayev</span>
+                        </h1>
+                        <p><strong>Web Developer</strong></p>
+                        <p>Building a successful product is a challenge. I am highly energetic in user experience design, interfaces and web development.</p>
+
+                        <div class="custom-btn-group mt-4">
+                          <a href="{% url 'cv' %}" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'>
+                          </i>Resume</a>
+                          <a href="{% url 'about' %}" class="btn custom-btn custom-btn-bg custom-btn-link">About Me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="about-image svg">
+                        <img src="{% static '/images/img1.png' %}" class="img-fluid" style="border-radius: 50%;">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}
